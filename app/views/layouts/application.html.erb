@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lojainformatica</title>
+  <title>Loja de Informática</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<!-- imagens do logotipo -->
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+	<%= image_tag 'logotipo.jpg', class: 'logo' %>
+
+	<!-- Cabeçalho -->
+	<h1> Loja de Informática </h1>
+
+	<%= yield %>
+
+	<!-- Rodapé -->
+	<h6> Visite-nos! </h6>
 
 </body>
 </html>

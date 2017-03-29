@@ -13,3 +13,49 @@
  *= require_tree .
  *= require_self
  */
+
+// Plano de Fundo da Página
+body
+{
+	background: image-url('textura-fundo.jpg') repeat #d1d5d8;
+}
+
+// Tamanho das imagens de logotipo
+.logo
+{
+	width: 181px;
+	height: 80px;
+}
+
+// Alinhamento do Cabeçalho
+h1
+{
+	text-align: center;
+}
+
+// Alinhamento do título
+h3
+{
+	text-indent: 100px;
+}
+
+// Alinhamento do Rodapé
+h6
+{
+	text-align: center;
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+
+// Mudar cor linha sim, linha não
+tr:nth-child(even)
+{
+	background-color: #f2f2f2
+}
+
+// Largura das Colunas
+th
+{
+	width: 200px;
+}
