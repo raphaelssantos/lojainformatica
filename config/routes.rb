@@ -5,7 +5,16 @@ Rails.application.routes.draw do
 
   get 'paginas/contato'
 
+  get 'paginas/empresa'
+
+  get 'paginas/localizacao'
+
+  get 'paginas/contato'
+
   resources :produtos
+
+  root :to => 'paginas#empresa'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

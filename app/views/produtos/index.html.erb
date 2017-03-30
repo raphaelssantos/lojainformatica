@@ -22,7 +22,7 @@
         <td><%= produto.modelo %></td>
         <td><%= produto.marca %></td>
         <td><%= produto.preco %></td>
-        <td><%= link_to 'Mostrar', produto %></td>
+        <td><%= link_to ' ', produto, class: "glyphicon glyphicon-list-alt" %></td>
         <td><%= link_to ' ', edit_produto_path(produto), class: "glyphicon glyphicon-pencil" %></td>
         <td><%= link_to ' ', produto, method: :delete, data: { confirm: 'Você tem certeza?' } , class: "glyphicon glyphicon-trash" %></td>
       </tr>
