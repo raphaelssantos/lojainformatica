@@ -8,22 +8,23 @@
 </head>
 <body>
 
-	<!-- imagens do logotipo -->
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-	<%= image_tag 'logotipo.jpg', class: 'logo' %>
-
-	<!-- Cabeçalho -->
-	<h1> Loja de Informática </h1>
-
+	<%= render "layouts/navbar" %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<%= render "layouts/latbar" %>
+			</div>
+			<div class="col-md-9">
+				<div class="panel-body">
+					<%= yield %>
+					<p class="notice"><%= notice %></p>
+					<p class="alert"><%= alert %></p>
+				</div>
+			</div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+	
 	<%= yield %>
-
-	<!-- Rodapé -->
-	<h6> Visite-nos! </h6>
 
 </body>
 </html>

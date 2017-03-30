@@ -31,7 +31,25 @@
     <%= f.label :preco %><br>
     <%= f.text_field :preco %>
   </div>
+  <div class="field">
+    <%= f.label :fabricacao %><br>
+    <%= f.text_field :fabricacao , class: 'datepicker' %>
+  </div>
+  <div>
+    <%= f.label :foto %>
+    <%= image_tag @produto.foto_url, class: 'foto' if @produto.foto? %>
+    <%= f.file_field :foto, label: 'Foto' , input_html: {accept: ('application/jpg') } %> <br/>
+  </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Salvar', :class => 'btn btn-primary' %>
+<%= link_to ' Voltar', produtos_path , class: "btn btn-default " %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $('.datepicker').datepicker({format: 'dd-mm-yyyy'});
+});
+
+</script>
